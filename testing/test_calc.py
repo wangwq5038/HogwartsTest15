@@ -16,7 +16,7 @@ class TestDemo:
 
     def teardown(self):
         print("计算结束")
-
+    # @pytest.mark.login
     @pytest.mark.parametrize('a, b, expect', [[1, 1, 2], [10, 10, 20], [100, 100, 200]])
     def test_add(self, a, b, expect):
 
@@ -40,3 +40,7 @@ class TestDemo:
             assert result == expect
         else:
             print("分母不能为零")
+
+        # with pytest.raises(ZeroDivisionError):
+        #     result = self.cala.div(a, b)
+        #     assert result == expect
