@@ -1,7 +1,7 @@
 import pytest
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def login():
     print("这是登录方法")
     return ("Tom", "123")
