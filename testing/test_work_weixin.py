@@ -28,7 +28,7 @@ class TestWork(object):
         # get_cookies() 可以获取当前页面的cookies
         # add_cookies() 可以把cookie添加到页面中去
         # cookies = self.driver.get_cookies()
-
+        #cookies需要更新，有过期时间
         cookies = [
             {'domain': '.work.weixin.qq.com', 'httpOnly': False, 'name': 'wwrtx.vid', 'path': '/', 'secure': False,
              'value': '1688850725669432'},
