@@ -63,37 +63,5 @@ from selenium import webdriver
 #         self.driver.find_element_by_link_text('技术服务').click()
 
 
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-#
-#
-# class TestWework:
-#     def setup(self):
-#         options = webdriver.ChromeOptions()
-#         options.debugger_address = "127.0.0.1:9222"
-#         self.driver = webdriver.Chrome(options=options)
-#         self.driver.implicitly_wait(2)
-#
-#     def test_upload(self):
-#         element_add = self.driver.find_element(By.CSS_SELECTOR, ".js_upload_file_selector")
-#         self.driver.execute_script("arguments[0].click();", element_add)
 
 
-from time import sleep
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
-
-class TestTestdemo():
-    def setup_method(self, method):
-        options = Options()
-        options.debugger_address = "127.0.0.1:9222"
-        self.driver = webdriver.Chrome(options=options)
-
-    def teardown_method(self, method):
-        self.driver.quit()
-
-    def test_testdemo(self):
-        self.driver.get("http://www.baidu.com")
-        sleep(3)
