@@ -1,0 +1,134 @@
+1603357914902	geckodriver	INFO	Listening on 127.0.0.1:12054
+1603357917959	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wangwq\\AppData\\Local\\Temp\\rust_mozprofilehajMKA"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603357922201	Marionette	INFO	Listening on port 12062
+1603357922289	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603357927754	Marionette	INFO	Stopped listening on port 12062
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x39013F,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x39013F,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x39013F,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603358025064	geckodriver	INFO	Listening on 127.0.0.1:12199
+1603358028101	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wangwq\\AppData\\Local\\Temp\\rust_mozprofileIR4O1g"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603358030451	Marionette	INFO	Listening on port 12207
+1603358030818	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603358039254	Marionette	INFO	Stopped listening on port 12207
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603358119300	geckodriver	INFO	Listening on 127.0.0.1:12365
+1603358122359	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wangwq\\AppData\\Local\\Temp\\rust_mozprofileiWOVIc"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603358126474	Marionette	INFO	Listening on port 12375
+1603358126689	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603358136956	Marionette	INFO	Stopped listening on port 12375
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603358160923	geckodriver	INFO	Listening on 127.0.0.1:12497
+1603358163960	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wangwq\\AppData\\Local\\Temp\\rust_mozprofile8WlANM"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603358166351	Marionette	INFO	Listening on port 12506
+1603358166670	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603358179146	Marionette	INFO	Stopped listening on port 12506
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603358202689	geckodriver	INFO	Listening on 127.0.0.1:12690
+1603358205742	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wangwq\\AppData\\Local\\Temp\\rust_mozprofile8zlgeQ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603358208064	Marionette	INFO	Listening on port 12698
+1603358208456	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603358220544	Marionette	INFO	Stopped listening on port 12698
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 6984, Chrome_ChildThread] WARNING: pipe error: 23
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+2: file /builds/worker/
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+check
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+outs/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 485
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1603358235226	geckodriver	INFO	Listening on 127.0.0.1:12812
+1603358238281	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wangwq\\AppData\\Local\\Temp\\rust_mozprofileMn6CD5"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1603358240589	Marionette	INFO	Listening on port 12822
+1603358241003	Marionette	WARN	TLS certificate errors will be ignored for this session
+1603358253283	Marionette	INFO	Stopped listening on port 12822
+[Child 4304, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 485
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

@@ -10,7 +10,7 @@ class MainPage(object):
     def __init__(self):
         options = Options()
         options.debugger_address = '127.0.0.1:9222'
-        self.driver = webdriver.Chrome(options=options)
+        self.driver = webdriver.Chrome()
 
     def goto_addmember(self):
         self.driver.find_element(By.XPATH, '//*[@id="menu_contacts"]//span[@class="frame_nav_item_title"]').click()
