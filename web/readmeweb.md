@@ -1,3 +1,39 @@
+## web自动化测试
+
+### 复用浏览器
+在cmd中打开Chrome的地址, 输入以下命令，会打开一个新的Chrome浏览器（执行之前需要关闭所有chrome打开的浏览器，且只有Chrome浏览器才可以复用）
+
+~~~
+chrome --remote-debugging-port=9222
+~~~
+
+复用浏览器相关代码
+~~~
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+
+from web.podemo1.page.add_member_page import AddMemberPage
+
+
+class MainPage:
+
+    def __init__(self):
+        options = Options()
+        options.debugger_address = "127.0.0.1:9222"
+        self.driver = webdriver.Chrome(options=options)
+
+    def goto_addmember(self):
+        # click addmember
+        self.driver.find_element(By.CSS_SELECTOR, ".index_service_cnt_itemWrap:nth-child(1)").click()
+
+        return AddMemberPage(self.driver)
+~~~
+
+
+## 取网页的cookie
+
+~~~
 import shelve
 from time import sleep
 
@@ -36,7 +72,7 @@ class TestWork(object):
         # get_cookies() 可以获取当前页面的cookies
         # add_cookies() 可以把cookie添加到页面中去
         # cookies = self.driver.get_cookies()
-        # cookies需要更新，有过期时间
+        #cookies需要更新，有过期时间
         cookies = [
             {'domain': '.work.weixin.qq.com', 'httpOnly': False, 'name': 'wwrtx.vid', 'path': '/', 'secure': False,
              'value': '1688850725669432'},
@@ -101,32 +137,42 @@ class TestWork(object):
         # shelve python 内置模块，专门用来对数据进行持久化存储的库，相当于一个小型的数据库
         # 可以通过key, value 把数据存储到shelve中
         db = shelve.open("cookies")
-        # db['cookie'] = cookies     # 这一步是为了将数据存到数据库，存完后就没有作用了，所以注释掉
+        # db['cookie'] = cookies
         # db.close()
         cookies = db["cookie"]
         db.close()
-        # 利用读取的cookie完成登录操作
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame#index")
         for cookie in cookies:
-            self.driver.add_cookie(cookie)  # 将cookie加到浏览器里，使用 add_cookie
+            self.driver.add_cookie(cookie)
         self.driver.refresh()
         sleep(3)
-        # 找到 ‘导入联系人按钮’
         self.driver.find_element(By.CSS_SELECTOR, ".index_service_cnt_itemWrap:nth-child(2)").click()
         sleep(2)
-        # 上传文件
         self.driver.find_element(By.CSS_SELECTOR, ".ww_fileImporter_fileContainer_uploadInputMask").send_keys(
             "D:\\HogwartsTest15\\testing\\worktest.xlsx")
         sleep(2)
-        # 验证上传.
-
         filename = self.driver.find_element(By.CSS_SELECTOR, ".ww_fileImporter_fileContainer_fileNames").text
         print(filename.get_attribute('value'))
         assert filename == "worktest.xlsx"
         sleep(3)
 
-    def test_get_cookie_shelve(self):  # 获取到前面存储到自己创建的数据库中的cookie
-        db = shelve.open("cookies")  # 此处的cookies在Windows是三个文件，后续需要确认正确的读取方式
+~~~
+将存好的cookie读取出来
+~~~
+    def test_get_cookie_shelve(self):   # 获取到前面存储到自己创建的数据库中的cookie
+        db = shelve.open("cookies")   #此处的cookies在Windows是三个文件，后续需要确认正确的读取方式
+        cookies = db["cookie"]
+        self.driver.get("https://work.weixin.qq.com/wework_admin/frame#index")
+        for cookie in cookies:
+            if isinstance(cookie.get("expiry"), float):    #expiry是cookie中的过期时间
+                cookie["expiry"] = int(cookie["expiry"])
+            self.driver.add_cookie(cookie)
+        self.driver.refresh()
+~~~
+如果cookie中的过期时间是float类型，使用add_cooike时会报错，此时可以转化为int类型，或者可以直接将该字段删掉，不用也是可以的
+~~~
+    def test_get_cookie_shelve(self):   # 获取到前面存储到自己创建的数据库中的cookie
+        db = shelve.open("cookies")   #此处的cookies在Windows是三个文件，后续需要确认正确的读取方式
         cookies = db["cookie"]
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame#index")
         for cookie in cookies:
@@ -136,3 +182,4 @@ class TestWork(object):
                 cookie.pop('expiry')
             self.driver.add_cookie(cookie)
         self.driver.refresh()
+~~~

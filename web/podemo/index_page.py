@@ -16,9 +16,11 @@ class IndexPage:
         self.driver.find_element(By.CSS_SELECTOR, '.index_top_operation_loginBtn').click()
 
         # return LoginPage   通过return 完成页面跳转
+        # 进入到登录页
         return LoginPage(self.driver)
 
     def goto_register(self):
         # 点击注册按钮
         self.driver.find_element(By.CSS_SELECTOR, '.index_head_info_pCDownloadBtn').click()
+        # 进入到注册页
         return RegisterPage(self.driver)

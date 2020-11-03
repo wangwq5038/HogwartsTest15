@@ -12,4 +12,4 @@ class RegisterPage:
         self.driver.find_element(By.ID, 'manager_name').send_keys("bbbbb1")
         self.driver.find_element(By.ID, 'register_tel').send_keys("13512354562")
         self.driver.find_element(By.ID, 'submit_btn').click()
-        return True
+        return True  # 为了在用例页面（test_xx.py）断言
