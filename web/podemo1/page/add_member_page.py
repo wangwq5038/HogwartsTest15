@@ -35,9 +35,11 @@ class AddMemberPage(BasePage):
         while True:
             contactlist = self.finds(By.CSS_SELECTOR, '.member_colRight_memberTable_td:nth-child(2)')
             titlelist = [element.get_attribute("title") for element in contactlist]
-            print(titlelist)
+            # print(titlelist)
             if value in titlelist:
-                return True
+                # print(value)
+                # return True
+                return titlelist
             total_list = total_list + titlelist
 
             result: str = self.find(By.CSS_SELECTOR, ".ww_pageNav_info_text").text
