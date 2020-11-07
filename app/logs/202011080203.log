@@ -1,0 +1,16 @@
+2020-11-08 02:03:32,187 - basepage.py[line:48] - INFO: click
+2020-11-08 02:03:32,187 - basepage.py[line:43] - INFO: xpath
+2020-11-08 02:03:32,187 - basepage.py[line:44] - INFO: //*[@text='通讯录']
+2020-11-08 02:03:35,487 - basepage.py[line:52] - INFO: aaaa006
+2020-11-08 02:03:35,487 - basepage.py[line:53] - INFO: find_by_scroll
+2020-11-08 02:03:42,126 - basepage.py[line:43] - INFO: xpath
+2020-11-08 02:03:42,127 - basepage.py[line:44] - INFO: //*[@resource-id='com.tencent.wework:id/hxm']
+2020-11-08 02:03:42,299 - basepage.py[line:43] - INFO: xpath
+2020-11-08 02:03:42,299 - basepage.py[line:44] - INFO: //*[@text='编辑成员']
+2020-11-08 02:03:43,636 - basepage.py[line:43] - INFO: xpath
+2020-11-08 02:03:43,636 - basepage.py[line:44] - INFO: //*[@text='删除成员']
+2020-11-08 02:03:44,988 - basepage.py[line:43] - INFO: xpath
+2020-11-08 02:03:44,989 - basepage.py[line:44] - INFO: //*[@text='确定']
+2020-11-08 02:03:45,921 - basepage.py[line:48] - INFO: click
+2020-11-08 02:03:45,921 - basepage.py[line:43] - INFO: xpath
+2020-11-08 02:03:45,922 - basepage.py[line:44] - INFO: //*[@text='通讯录']

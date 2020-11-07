@@ -1,0 +1,5 @@
+2020-11-08 01:06:30,289 - basepage.py[line:48] - INFO: click
+2020-11-08 01:06:30,289 - basepage.py[line:43] - INFO: xpath
+2020-11-08 01:06:30,290 - basepage.py[line:44] - INFO: //*[@text='ͨѶ¼']
+2020-11-08 01:06:33,019 - basepage.py[line:52] - INFO: aaaa002
+2020-11-08 01:06:33,019 - basepage.py[line:53] - INFO: find_by_scroll

@@ -1,0 +1,11 @@
+2020-11-07 23:47:59,457 - basepage.py[line:43] - INFO: click
+2020-11-07 23:47:59,457 - basepage.py[line:38] - INFO: xpath
+2020-11-07 23:47:59,458 - basepage.py[line:39] - INFO: //*[@text='通讯录']
+2020-11-07 23:48:03,345 - basepage.py[line:47] - INFO: 添加成员
+2020-11-07 23:48:03,345 - basepage.py[line:48] - INFO: find_by_scroll
+2020-11-07 23:48:16,468 - basepage.py[line:38] - INFO: xpath
+2020-11-07 23:48:16,468 - basepage.py[line:39] - INFO: //*[@text='手动输入添加']
+2020-11-07 23:48:22,460 - basepage.py[line:56] - INFO: get_toast_text
+2020-11-07 23:48:22,460 - basepage.py[line:38] - INFO: xpath
+2020-11-07 23:48:22,460 - basepage.py[line:39] - INFO: //*[@class='android.widget.Toast']
+2020-11-07 23:48:23,630 - basepage.py[line:59] - INFO: 添加成功

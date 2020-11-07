@@ -1,0 +1,8 @@
+2020-11-08 01:16:37,848 - basepage.py[line:48] - INFO: click
+2020-11-08 01:16:37,849 - basepage.py[line:43] - INFO: xpath
+2020-11-08 01:16:37,849 - basepage.py[line:44] - INFO: //*[@text='ͨѶ¼']
+2020-11-08 01:16:40,670 - basepage.py[line:52] - INFO: aaaa002
+2020-11-08 01:16:40,670 - basepage.py[line:53] - INFO: find_by_scroll
+2020-11-08 01:16:48,208 - basepage.py[line:48] - INFO: click
+2020-11-08 01:16:48,208 - basepage.py[line:43] - INFO: xpath
+2020-11-08 01:16:48,208 - basepage.py[line:44] - INFO: //*[@resource-id='com.tencent.wework:id/hxm']
