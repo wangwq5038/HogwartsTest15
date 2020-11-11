@@ -4,7 +4,7 @@ from frame.main import Main
 class TestMain:
 
     def test_main(self):
-        main = Main().goto_market().goto_search()
+        Main().goto_market().goto_search()
 
 # def enhance(func):
 #     print('before')
